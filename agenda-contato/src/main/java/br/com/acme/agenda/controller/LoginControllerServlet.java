@@ -1,0 +1,34 @@
+package br.com.acme.agenda.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class LoginControllerServlet
+ */
+@WebServlet("/LoginControllerServlet")
+public class LoginControllerServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		String login = request.getParameter("login");
+		String senha = request.getParameter("senha");
+		
+		/**
+		 * Verificar se o usuári é valido.
+		 * 	Se for, direciona ele para a tela principal/dashboard
+		 *  Se não, direciona para a tela de falha no login.
+		 *  
+		 *  
+		 *  
+		 */
+	}
+
+}
